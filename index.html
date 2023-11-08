@@ -70,10 +70,9 @@
         <div class="container">
           <div class="row flex-center">
             <!--<div class="col-lg-6 col-md-5 order-md-1"><img class="img-fluid" src="assets/img/banner.png" alt="" /></div>-->
-            <div class="col-lg-6 col-md-5 order-md-1"><div class="text-2">Coba segudang fitur yg menarik.<br>upgrade juga plan ke premium agar kamu bisa mengakses fitur tanpa batas, pilih paket yg sesuai untuk kamu.</div></div>
-            <div class="col-md-7 col-lg-6 mt-5 text-md-start">
-              <div class="ucapan">Selamat datang zuvers</div>
-              <div class="text-1">Chat Bot hadirkan fitur yg membantu mu ber sosial media dan mencari teman tanpa batas</div>
+            <div class="col-lg-6 col-md-5 order-md-1"><div class="blockquotes"><p>update: <small id="auto-typing" class="auto-input"></small></p></div></div>
+            <div class="col-md-7 col-lg-6 mt-5 text-md-start"><div class="ucapan">Selamat datang zuvers</div>
+              <div class="text-1">Chat Bot hadirkan fitur yg membantu mu ber sosial media dan mencari teman tanpa batas</div><div class="text-2">Coba segudang fitur yg menarik.<br>upgrade juga plan ke premium agar kamu bisa mengakses fitur tanpa batas, pilih paket yg sesuai untuk kamu.</div>
               <a class="btn btn-lg btn-danger hover-top btn-glow" href="#start">M U L A I</a>
             </div>
           </div>
@@ -699,11 +698,21 @@
     <script src="vendors/is/is.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
-    $.getJSON("https://api.ipify.io/?format=json",
+    let typed = new Typed("#auto-typing",{
+      strings: ["🔧 perbaikan fitur tiktok", "➕ penambahan fitur game", "🔧 perbaikan fitur instagram"],
+      typeSpeed: 50,
+      backSpeed: 70,
+      showCursor: false,
+      loop: true
+    })
+    </script>
+    <script>
+    $.getJSON("http:fetch.xinzuo.xyz",
       function(data) {
-        $("#ip").html(data.ip);
+        $("#status").html(data.status);
       })
    </script>
 
