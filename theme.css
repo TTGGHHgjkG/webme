@@ -704,7 +704,7 @@ progress {
   height: 70px;
   margin-top: 35px;
   margin-bottom: -5px;
-  background: #eee;
+  background-color: #eee;
   border-radius: 10px;
 }
 .update-typing p {
@@ -738,7 +738,6 @@ progress {
      font-family: 'Poppins';
      }
      .text-2 {
-     opacity: 100;
      margin-top: 15px;
      margin-bottom: 20px;
      color: #1d1e22;
@@ -753,7 +752,7 @@ progress {
       height: 70px;
       margin-top: 35px;
       margin-bottom: -5px;
-      background: #eee;
+      background-color: #eee;
       border-radius: 10px;
       }
       .update-typing p {
