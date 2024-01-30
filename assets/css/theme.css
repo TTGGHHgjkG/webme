@@ -741,6 +741,14 @@ progress {
      font-size: 19px;
      font-family: 'Poppins';
      }
+     .badge-web {
+     background-color: rgba(109, 98, 253, 0.1);
+     color: #6d12fd;
+     padding: 5px 10px;
+     border-radius: 5px;
+     font-family: 'Poppins';
+     font-weight: 500;
+     }
      .update-typing {
       padding: 20px;
       height: 70px;
